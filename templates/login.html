@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .card_container{
+    width: 300px;
+    height: 430px;
+    background: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upper_container{
+    height: 150px;
+    background: #4583EF;
+}
+
+.lower_container{
+    height: 280px;
+    background: #ffffff;
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.image_container img{
+    background: #ffffff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(100px, 100px);
+}
+
+.make_account{
+    color: #CCBEB4;
+    background: #ffffff;
+    font-weight: bold;
+    border: none;
+}
+
+.login_page{
+    font-family: 'Roboto', sans-serif;
+    color: #CCBEB4;
+    font-weight: bold;
+}
+</style>
+
+<div class="card_container">
+    <div class="upper_container">
+        <div class="image_container">
+            <img src="login_person.jpg">
+        </div>
+    </div>
+    <div class="lower_container">
+        
+            <form>
+                <br>
+                <input type="text" id="fname" name="fname" placeholder="Email"><br><br>
+                <input type="text" id="lname" name="lname" placeholder="Password"><br><br>
+                <input type="text" id="fname" name="fname" placeholder="Username"><br>
+                <br>
+                <input type="submit" value="Register" class="make_account">
+              </form>
+              
+            <p class="login_page">Already have an account?</p>
+        </div>
+    </div>
+{% endblock %}
