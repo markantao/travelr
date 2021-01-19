@@ -43,13 +43,6 @@
 }
 </style>
 
-{% with messages = get_flashed_messages() %}
-        {% if messages%}
-            {% for msg in messages%}
-                <p>{{msg}}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith%}
 
 <div class="card_container">
     <div class="upper_container">
@@ -59,7 +52,8 @@
             <form action="#" method="POST">
                 <br>
                 <input type="text" id="fname" name="email" placeholder="Email"><br><br>
-                <input type="text" id="lname" name="unm" placeholder="Username"><br><br>
+                <input type="text" id="fname" name="password" placeholder="Password"><br><br>
+                <input type="text" id="lname" name="usrname" placeholder="Username"><br><br>
                 <br>
                 <input type="submit" value="Register" class="make_account">
               </form>
